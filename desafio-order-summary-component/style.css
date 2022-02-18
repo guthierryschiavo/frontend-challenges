@@ -146,9 +146,9 @@ main{
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
-    color: var(--desaturatedblue);
+    color: var(--darkblue);
 }
-.cancel-order:hover{
+.cancel-order:hover .cancel-order:visited{
     cursor: pointer;
     color:var(--darkblue);
     text-decoration: none;
