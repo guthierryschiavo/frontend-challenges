@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+    --font-text: 'Lexend Deca', sans-serif;
+    --font-title:'Big Shoulders Display', cursive;
+}
+
+body{
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Verylightgray);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box1, .box2, .box3{
+    width: 290px;
+    height: 450px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-content: center;
+    padding: 0px 40px 0px 40px;
+}
+.car-sedan{
+    background-image: url(images/icon-sedans.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+
+    width: 60px;
+    height: 50px;   
+}
+.car-suv{
+    background-image: url(images/icon-suvs.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+
+    width: 60px;
+    height: 50px;   
+}
+.car-luxury{
+    background-image: url(images/icon-luxury.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+
+    width: 60px;
+    height: 50px;   
+}
+.box1{
+    background-color: var(--Brightorange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.box2{
+    background-color: var(--Darkcyan);
+}
+.box3{
+    background-color: var(--Verydarkcyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h1{
+    font-family: var(--font-title);
+    font-size: 3.5em;
+    font-variant-caps:all-petite-caps;
+    color: var(--Verylightgray);
+}
+p{
+    font-family: var(--font-text);
+    font-size: 15px;
+    line-height: 22px;
+    padding-bottom: 20px;
+    color: var(--Transparentwhite);
+    margin-bottom:20px;
+}
+.box1 > a{
+    background-color: var(--Verylightgray);
+    color: var(--Brightorange);
+    font-family: var(--font-text);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    width: 140px;
+    padding:15px 5px;
+    margin-bottom:15px;
+}
+.box2 > a{
+    background-color: var(--Verylightgray);
+    color: var(--Darkcyan);
+    font-family: var(--font-text);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    width: 140px;
+    padding:15px 5px;
+    margin-bottom:15px;
+}
+.box3 > a{
+    background-color: var(--Verylightgray);
+    color: var(--Verydarkcyan);
+    font-family: var(--font-text);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    width: 140px;
+    padding:15px 5px;
+    margin-bottom:15px;
+}
+a:hover{
+    background-color: transparent;
+    border:2px solid white;
+    color: white;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    width:400px;
+    margin:auto;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
