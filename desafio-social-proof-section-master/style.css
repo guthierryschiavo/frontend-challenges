@@ -152,7 +152,7 @@ body{
 }
 .box_1 p {
     color: var(--White);
-    margin: 30px 35px;
+    margin: 30px 30px;
     font-size: 14px;
     line-height: 1.7em;
 }
@@ -197,6 +197,8 @@ body{
     top:-60px;
 }
 footer {
+    position: absolute;
+    bottom: 10px;
     font-size: 15px; 
     text-align: center;
     width: 100%;
