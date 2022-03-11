@@ -196,3 +196,18 @@ body{
     position: relative;
     top:-60px;
 }
+footer {
+    font-size: 15px; 
+    text-align: center;
+    width: 100%;
+}
+p{
+    padding:5px;
+}
+footer> a, a:visited {
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
