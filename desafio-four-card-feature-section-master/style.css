@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+
+    --font-padrao:'Poppins', sans-serif;
+}
+
+body{
+    font-size:15px;
+    font-family: var(--font-padrao);
+    width: 100vw;
+    height: 100%;
+    background-color: var(--VeryLightGray);
+    overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+    padding-left: 30rem;
+    padding-right: 30rem;
+    padding-top:3rem;
+}
+header h1{
+    font-weight: 200;
+}
+header span{
+    display:block;
+    font-weight: 600;
+}
+header p{
+    font-weight:200;
+    font-size: 14px;
+    margin-top:20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container h2{
+    text-align: left;
+    margin-left:20px;
+    margin-top:25px;
+}
+.container p{
+    text-align: left;
+    margin: 5px 30px 0px 20px;
+    font-size: 12px;
+    color: var(--GrayishBlue);
+}
+img{
+    position: relative;
+    top: 15%;
+    left: 70%;
+}
+.box_style{
+    background-color: white;
+    box-shadow: 1px 3px 12px 0px #0000002c;
+}
+.column_1{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+}
+.column_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 300px;
+    margin: 50px 20px 0px 20px;
+}
+.column_3{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+}
+.box_ciano{
+    height: 220px;
+    width: 300px;
+    border-top: 4px solid var(--Cyan);
+    border-radius: 7px;
+}
+.box_red{
+    height: 220px;
+    width: 300px;
+    border-top: 4px solid var(--Red);
+    border-radius: 7px;
+}
+.box_yellow{
+    height: 220px;
+    width: 300px;
+    border-top: 4px solid var(--Orange);
+    border-radius: 7px;
+}
+.box_blue{
+    height: 220px;
+    width: 300px;
+    border-top: 4px solid var(--Blue);
+    border-radius: 7px;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+footer> a, a:visited {
+    color: blue; 
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
