@@ -6,5 +6,5 @@
 <a href="https://guthierryschiavo.github.io/frontend-challenges/desafio-stats-preview-card-component-main/index.html"> Desafio 05: Stats Preview Card</a><br>
 <a href="https://guthierryschiavo.github.io/frontend-challenges/desafio-social-proof-section-master/index.html"> Desafio 06: Social Proof Section Master</a><br>
 <a href="https://guthierryschiavo.github.io/frontend-challenges/desafio-profile-card-component-main/index.html"> Desafio 07: Profile Card Component Main</a><br>
-<!--<a href=""> Desafio 08:</a><br>
-<a href=""> Desafio 09:</a><br> -->
+<a href="https://guthierryschiavo.github.io/frontend-challenges/desafio-four-card-feature-section-master/index.html"> Desafio 08: Four Card Feature Section Master</a><br>
+<!--<a href=""> Desafio 09:</a><br> -->
