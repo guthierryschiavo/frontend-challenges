@@ -30,8 +30,7 @@ body{
 
 header{
     text-align: center;
-    padding-left: 30rem;
-    padding-right: 30rem;
+
     padding-top:3rem;
 }
 header h1{
@@ -40,11 +39,14 @@ header h1{
 header span{
     display:block;
     font-weight: 600;
+    color: var(--VeryDarkBlue);
 }
-header p{
+header > p{
     font-weight:200;
+    margin: auto;
     font-size: 14px;
     margin-top:20px;
+    width: 500px;
 }
 .container{
     display: flex;
@@ -55,6 +57,7 @@ header p{
     text-align: left;
     margin-left:20px;
     margin-top:25px;
+    color: var(--VeryDarkBlue);
 }
 .container p{
     text-align: left;
