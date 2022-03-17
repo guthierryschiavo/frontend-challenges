@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: var(--font_text);
+}
+
+:root{
+    --Violet: rgb(103, 75, 175);
+    --SoftMagenta: rgb(232, 130, 232);
+
+    --font_tittle: 'Poppins', sans-serif;
+    --font_text: 'Open Sans', sans-serif;
+}
+body{
+    background-color: var(--Violet);
+    background-image: url(images/bg-desktop.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover 100%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+header img{
+    margin-left:7.5rem;
+    margin-top:4rem;
+    margin-bottom:2rem;
+    width: 13%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container img{
+    width: 55%;
+}
+.box_text{
+    width: 35rem;
+}
+.box_text h1, p, button{
+    margin-left: 3rem;
+}
+.box_text h1{
+    font-family: var(--font_tittle);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    margin-top:2rem;
+}
+.box_text p{
+    color: white;
+    line-height: 1.7rem;
+    font-size:1.1rem;
+    margin-top:1.2rem;
+    margin-bottom:1.2rem;
+}
+.box_text button{
+    width: 35%;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    font-family: var(--font_tittle);
+    color: var(--Violet);
+    font-weight: 400;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+}
+.box_text button:hover{
+    background-color: var(--SoftMagenta);
+    color: white;
+}
+.social_medias{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.facebook_icon, .instagram_icon, .twitter_icon{
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius:50%;
+    margin-top:3rem;
+    cursor: pointer;
+}
+.facebook_icon:hover, 
+.instagram_icon:hover, 
+.twitter_icon:hover{
+    border: 2px solid var(--SoftMagenta);
+    transition: 0.2s;
+}
+.bi-facebook:hover, 
+.bi-twitter:hover, 
+.bi-instagram:hover{
+    color: var(--SoftMagenta);
+}
+.bi-facebook, .bi-twitter, .bi-instagram{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 20%;
+    top: 7%;
+}
+.facebook_icon, .twitter_icon{
+    margin-right: 1.5rem;
+}
+.instagram_icon{
+    margin-right:8rem;
+}
