@@ -32,6 +32,9 @@ main{
     flex-direction: column;
     height: 80vh;
 }
+header{
+    height: 15vh;
+}
 header img{
     margin-left:7.5rem;
     margin-top:4rem;
@@ -43,7 +46,6 @@ header img{
     justify-content: center;
     align-items: flex-start;
 }
-
 .container img{
     width: 55%;
 }
@@ -122,3 +124,16 @@ header img{
 .instagram_icon{
     margin-right:8rem;
 }
+footer{
+    text-align: center;
+    padding-bottom: 5px;
+    color: white;
+}
+footer> a, a:visited {
+    color: blue; 
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
