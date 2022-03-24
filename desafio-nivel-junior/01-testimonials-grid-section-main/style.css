@@ -1,0 +1,315 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+:root{
+
+    --Moderateviolet: rgb(117, 65, 200);
+    --Verydarkgrayishblue: rgb(72, 85, 106);
+    --Verydarkblackishblue: rgb(25, 33, 46);
+    --White: hsl(0, 0%, 100%);
+
+    --Lightgray: rgb(207, 207, 207);
+    --Lightgrayishblue: rgb(236, 242, 248);
+}
+/*
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+footer{
+    height: 5vh;
+    text-align: center;
+    font-size: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: blue;
+}
+footer a:visited{
+    color: blue;
+}
+body{
+    background-color: var(--Lightgrayishblue);
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "box_dan box_dan box_jon box_kira"
+    "box_jea box_pat box_pat box_kira";
+    grid-template-rows: 28fr 25fr;
+    grid-template-columns: 20fr 20fr 20fr 20fr;
+    grid-gap: 20px;
+    max-width:1200px;
+}
+ul{
+    list-style-type: none;
+}
+.box_dan, .box_jea, .box_jon, .box_kira, .box_pat{
+    border-radius: 10px;
+}
+.box_dan{
+    grid-area: box_dan;
+    background-color: var(--Moderateviolet);
+    position: relative;
+}
+.box_dan .img_dan{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.486);
+    margin: 25px 30px;
+}
+.box_dan .img_quotation{
+    position: absolute;
+    top: 0%;
+    right: 15%;
+    z-index: 0;
+}
+.img_quotation img{
+    width: 110%;
+}
+.box_dan ul{
+    position: absolute;
+    top: 9%;
+    left: 14%;
+}
+.box_dan li:nth-child(1){
+    color: white;
+    font-size: 15px;
+}
+.box_dan li:nth-child(2){
+    color: white;
+    font-size: 12px;
+    opacity: 50%;
+}
+.text_dan{
+    width: 40rem;
+}
+.box_dan h1{
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 2;
+}
+.box_dan p{
+    line-height: 1.5rem;
+    color: white;
+    opacity: 50%;
+    margin-top: 15px;
+}
+.box_dan h1, p{
+    margin: 0px 30px;
+}
+
+.box_jon{
+    grid-area: box_jon;
+    background-color: var(--Verydarkgrayishblue);
+    position: relative;
+}
+.box_jon .img_jon {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white 50%;
+    margin: 25px 30px;
+}
+.box_jon ul{
+    position: absolute;
+    top: 9%;
+    left: 30%;
+}
+.box_jon li:nth-child(1){
+    color: white;
+    font-size: 15px;
+}
+.box_jon li:nth-child(2){
+    color: white;
+    font-size: 12px;
+    opacity: 50%;
+}
+.text_jon{
+    width: 19rem;
+}
+.box_jon h1, p{
+    margin: 0px 30px;
+}
+.box_jon h1{
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 2;
+}
+.box_jon p{
+    line-height: 1.5rem;
+    color: white;
+    opacity: 50%;
+    margin-top: 15px;
+}
+.box_kira{
+    grid-area: box_kira;
+    background-color: var(--White);
+    position: relative;
+}
+.box_kira .img_kira {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white 50%;
+    margin: 25px 30px;
+}
+.box_kira ul{
+    position: absolute;
+    top: 4.8%;
+    left: 30%;
+}
+.box_kira li:nth-child(1){
+    color: var(--Verydarkgrayishblue);
+    font-size: 15px;
+}
+.box_kira li:nth-child(2){
+    color:var(--Verydarkgrayishblue) ;
+    font-size: 12px;
+    opacity: 50%;
+}
+.text_kira{
+    width: 20rem;
+}
+.box_kira h1, p{
+    margin: 0px 30px;
+}
+.box_kira h1{
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--Verydarkgrayishblue);
+    z-index: 2;
+}
+.box_kira p{
+    line-height: 1.5rem;
+    color: var(--Verydarkgrayishblue);
+    opacity: 50%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.box_jea{
+    grid-area: box_jea;
+    background-color: var(--White);
+    position: relative;
+}
+
+.box_jea .img_jea {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white 50%;
+    margin: 25px 30px;
+}
+.box_jea ul{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+.box_jea li:nth-child(1){
+    color: var(--Verydarkgrayishblue);
+    font-size: 15px;
+}
+.box_jea li:nth-child(2){
+    color: var(--Verydarkgrayishblue);
+    font-size: 12px;
+    opacity: 50%;
+}
+.text_jea{
+    width: 19rem;
+}
+.box_jea h1, p{
+    margin: 0px 30px;
+}
+.box_jea h1{
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--Verydarkgrayishblue);
+    z-index: 2;
+}
+.box_jea p{
+    line-height: 1.5rem;
+    color: var(--Verydarkgrayishblue);
+    opacity: 50%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.box_pat{
+    grid-area: box_pat;
+    background-color: var(--Verydarkblackishblue);
+    position: relative;
+}
+.box_pat .img_pat {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white 50%;
+    margin: 25px 30px;
+}
+.box_pat ul{
+    position: absolute;
+    top: 9%;
+    left: 16%;
+}
+.box_pat li:nth-child(1){
+    color: white;
+    font-size: 15px;
+}
+.box_pat li:nth-child(2){
+    color: white;
+    font-size: 12px;
+    opacity: 50%;
+}
+.text_pat{
+    width: 41rem;
+}
+.box_pat h1, p{
+    margin: 0px 30px;
+}
+.box_pat h1{
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 2;
+}
+.box_pat p{
+    line-height: 1.5rem;
+    color: white;
+    opacity: 50%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
